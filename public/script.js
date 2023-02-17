@@ -28,9 +28,22 @@ var peer = new Peer({
 	config: {
 		iceServers: [
 			{
-				url: "relay.metered.ca",
-				credential: "LqzPAqd9Y9u+ODbA",
+				urls: "stun:relay.metered.ca:80",
+			},
+			{
+				urls: "turn:relay.metered.ca:80",
 				username: "ce53cc167db981076228c35e",
+				credential: "LqzPAqd9Y9u+ODbA",
+			},
+			{
+				urls: "turn:relay.metered.ca:443",
+				username: "ce53cc167db981076228c35e",
+				credential: "LqzPAqd9Y9u+ODbA",
+			},
+			{
+				urls: "turn:relay.metered.ca:443?transport=tcp",
+				username: "ce53cc167db981076228c35e",
+				credential: "LqzPAqd9Y9u+ODbA",
 			},
 		],
 	},
