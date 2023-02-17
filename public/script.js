@@ -22,20 +22,20 @@ showChat.addEventListener("click", () => {
 const user = prompt("Enter your name");
 
 var peer = new Peer({
-	host: "videocall-33h1.onrender.com",
+	host: "172.16.3.236",
 	port: 3030,
 	path: "/peerjs",
 	config: {
 		iceServers: [
 			{
-				url: "turn:192.158.29.39:3478?transport=udp",
-				credential: "JZEOEt2V3Qb0y27GRntt2u2PAYA=",
-				username: "28224511:1379330808",
+				url: "turn:relay.backups.cz",
+				credential: "webrtc",
+				username: "webrtc",
 			},
 			{
-				url: "turn:192.158.29.39:3478?transport=tcp",
-				credential: "JZEOEt2V3Qb0y27GRntt2u2PAYA=",
-				username: "28224511:1379330808",
+				url: "turn:relay.backups.cz?transport=tcp",
+				credential: "webrtc",
+				username: "webrtc",
 			},
 		],
 	},
