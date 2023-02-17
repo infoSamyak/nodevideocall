@@ -28,14 +28,9 @@ var peer = new Peer({
 	config: {
 		iceServers: [
 			{
-				url: "turn:relay.backups.cz",
-				credential: "webrtc",
-				username: "webrtc",
-			},
-			{
-				url: "turn:relay.backups.cz?transport=tcp",
-				credential: "webrtc",
-				username: "webrtc",
+				url: "relay.metered.ca",
+				credential: "LqzPAqd9Y9u+ODbA",
+				username: "ce53cc167db981076228c35e",
 			},
 		],
 	},
